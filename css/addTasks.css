@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+body{
+  background-color: #101318 !important;
+  font-family: 'Roboto', sans-serif;
+}
+main {
+margin-left: 5rem;
+padding: 1rem;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+input[type=text] {
+  background-color: transparent;
+}
+
+.card {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  background-image: radial-gradient(circle at 0% 0%, #373b52, #252736 51%, #1d1e26);
+  height: 600px;
+  display: flex;
+  direction: column;
+  align-items: center;
+
+}
+
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 42px;
+  width: 50%;
+  display: flex;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #9b9b9b;
+  outline: 0;
+  font-size: 1.3rem;
+  color: #fff;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+  margin-bottom: 30px
+}
+.form__field::placeholder {
+  color: transparent;
+}
+.form__field:placeholder-shown ~ .form__label {
+  font-size: 1.3rem;
+  cursor: text;
+  top: 20px;
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #9b9b9b;
+}
+
+.form__field:focus {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, #11998e, #38ef7d);
+  border-image-slice: 1;
+}
+.form__field:focus ~ .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #11998e;
+  font-weight: 700;
+}
+
+/* reset input */
+.form__field:required, .form__field:invalid {
+  box-shadow: none;
+}
+.success-msg {
+  color: #270;
+  background-color: #DFF2BF;
+}
+.alert{
+  position: absolute;
+}
+
+.sub-btn{
+  outline: none;
+  height: 40px;
+  text-align: center;
+  width: 130px;
+  border-radius: 40px;
+  background-color: transparent;
+  border: 2px solid #1ECD97;
+  color: #1ECD97;
+  letter-spacing: 1px;
+  text-shadow: 0;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  position: relative;
+  top:25%;
+
+}
+.sub-btn:hover {
+  color:black ;
+  font-weight: bold;
+  background: #00C9A7;
+}
+.sub-btn:active {
+  letter-spacing: 2px;
+}
+h1{
+
+  text-align: center;
+  color: #57EE7D;
+}
+
+@media only screen and (max-width: 600px) {
+.card{
+  height: 500px;
+}
+.sub-btn{
+
+  position: relative;
+  top: 0;
+
+}
+h1{
+  font-size: 1em;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+  main {
+    margin: 0;
+  }
+}

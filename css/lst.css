@@ -1,0 +1,69 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body{
+  background-color: #101318 !important;
+  color: white !important;
+  font-family: 'Roboto', sans-serif;
+}
+main {
+  margin-left: 5rem;
+  padding: 1rem;
+}
+a {
+  color: black;
+
+  &:hover {
+    text-decoration: none !important;
+    color: black;
+  }
+}
+
+#add {
+  background-color: rgb(226, 223, 223);
+  padding: 5px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+#add a {
+  text-decoration: none;
+  color: black;
+}
+#add:hover {
+  text-decoration: none;
+  color: green;
+}
+
+#addbtn {
+  margin-bottom: 8px;
+}
+
+th:last-child {
+  text-align: right;
+}
+
+td:last-child {
+  text-align: right;
+  user-select: none;
+}
+td:last-childtd:last-child i {
+  margin-left: 10px;
+  cursor: pointer;
+}
+.container {
+  width: 100%;
+}
+
+.btn {
+  border: none;
+}
+table {
+  border-radius: 5px 5px 0 0 !important;
+}
+.gg-trash{
+  color: white;
+}
+.gg-trash:hover {
+  transform: rotate(40deg);
+  color: red;
+}
